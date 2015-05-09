@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * MyfcFramework Captcha oluşturma sınıfı
  *  
@@ -6,7 +7,7 @@
  */
 
 namespace Myfc;
-use Myfc\Session;
+
 /**
  * 
  * @author vahit�erif
@@ -237,7 +238,7 @@ imagedestroy($resim);
         
         public function check($string = ''){
             
-            ($string === Session::get('captch')) ? true:false;
+            ($string === $_SESSION['captch']) ? true:false;
             
         }
         
