@@ -236,7 +236,7 @@ imagedestroy($resim);
 
         }
         
-        public function check($string = ''){
+        public static function check($string = ''){
             
             ($string === $_SESSION['captch']) ? true:false;
             
