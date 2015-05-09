@@ -24,3 +24,12 @@ $captcha  = new Captcha( [
 $captcha->generate(); ##resmi oluşturur
 
 ```
+### Veriyi Kontrol Etme
+
+```sh 
+
+use Myfc\Captcha;
+
+$check = Captcha::check($_POST['guvenlik']);
+
+```
